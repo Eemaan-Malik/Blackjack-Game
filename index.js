@@ -7,6 +7,8 @@ let isAlive = false;
 let cardsEL = document.getElementById("cards-el");
 let sumEL = document.getElementById("sum-el");
 let messageEL = document.getElementById("message-el");
+let playerEl = document.getElementById("player-el");
+
 
 function startGame() {
   let firstCard = getRandomCard();
@@ -61,3 +63,8 @@ function newCard() {
     renderGame();
   }
 }
+const player = {
+  name: "Per",
+  points: "$30"
+}
+  playerEl.textContent= player.name +":" + " " + player.points
